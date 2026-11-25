@@ -10,7 +10,8 @@
 // the run reaches the guardrail of 20+ distinct coins with a round trip.
 //
 // Fully deterministic: no clock, no environment, no Math.random; only
-// insertion-ordered Maps are iterated.
+// insertion-ordered Maps are iterated, so two executions of the bot produce
+// byte-identical action logs (the harness runs every entry twice).
 
 import type { Batch, Bot, BotState, OrderInput } from './vendor/makefun-bot.ts';
 
